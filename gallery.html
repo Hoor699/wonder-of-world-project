@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> gallery </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+  <style>
+    <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      padding-top: 80px;
+    }
+
+    .intro-heading {
+      text-align: center;
+      color: #ffd700;
+      margin-bottom: 20px;
+    }
+
+    .intro-paragraph {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .intro-img {
+      border-radius: 15px;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+    }
+
+    /* wonder section */
+    .wonder-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 50px 0;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.4s ease;
+    }
+
+    .wonder-row:hover {
+      transform: scale(1.02);
+    }
+
+    .wonder-row img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .wonder-text {
+      padding: 20px;
+    }
+
+    .wonder-text h3 {
+      color: #080804;
+      font-weight: bold;
+    }
+
+    .wonder-text p {
+      line-height: 1.7;
+      font-size: 1rem;
+      text-align: justify;
+    }
+
+    @media (min-width: 768px) {
+      .wonder-row {
+        flex-wrap: nowrap;
+      }
+
+      .wonder-row img {
+        width: 45%;
+      }
+
+      .wonder-text {
+        width: 55%;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .wonder-text {
+        padding: 15px;
+      }
+      .intro-paragraph {
+    font-size: 1.1rem;
+    color: #000000;
+    line-height: 1.8;
+    text-align: justify;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
+}
+
+    }
+  </style>
+    <header class="gallery-hero">
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+  <div class="container-fluid px-5">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="wonderworld_logo_transparent.png" alt="Logo" class="logo-img me-3" style="height: 50px;">
+    </a>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav nav-menu ms-auto mt-3 mt-lg-0 gap-4">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" id="#feedback" href="index.html">Feedback</a></li>
+        <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+    <!-- GALLERY SECTION -->
+<section class="gallery-section" id="gallery">
+  <h1 class="animated-heading">
+    <button>G</button>
+    <button>A</button>
+    <button>L</button>
+    <button>L</button>
+    <button>E</button>
+    <button>R</button>
+    <button>Y</button>
+  </h1>
+  <p class="gallery-description">
+    Explore the most breathtaking wonder ever built or formed! From ancient marvels carved in stone to towering masterpieces touching the sky, the Wonders of the World are timeless stories of human imagination, resilience, and art.
+  </p>
+
+  <div class="gallery-container">
+    <div class="wonder-card">
+      <img src="gallery wall china.jpg" alt="Great Wall of China">
+      <div class="card-info">
+        <h3>GREAT WALL OF CHINA</h3>
+      </div>
+    </div>
+    <div class="wonder-card">
+      <img src="gallery jordan.jpg" alt="Petra, Jordan">
+      <div class="card-info">
+        <h3>PETRA, JORDAN</h3>
+      </div>
+    </div>
+    <div class="wonder-card">
+      <img src="gallery brzail.jpg" alt="Christ">
+      <div class="card-info">
+        <h3>CHRIST THE REDEEMER</h3>
+      </div>
+    </div>
+    <div class="wonder-card">
+      <img src="gallery roman.jpg" alt="Colosseum">
+      <div class="card-info">
+        <h3>COLOSSEUM</h3>
+      </div>
+    </div>
+     <div class="wonder-card">
+      <img src="gallery grand canyon.jpg" alt="grand canyon">
+      <div class="card-info">
+        <h3>grand canyon</h3>
+      </div>
+    </div>
+    <div class="wonder-card">
+      <img src="galeery greay pyramid gaza.jpg" alt="great pyramid of gaza">
+      <div class="card-info">
+        <h3>great pyramid of gaza</h3>
+      </div>
+    </div>
+    <div class="wonder-card">
+      <img src="gallery mahal.jpg" alt="taj mahal">
+      <div class="card-info">
+        <h3>taj mahal india</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="gallery-section">
+  <div class="container text-center">
+    <h1 class="section-title">✨ Featured Gallery ✨</h1>
+    <p class="section-desc">
+      "Travel makes one modest. You see what a tiny place you occupy in the world."
+    </p>
+
+    <div class="row gallery-cards">
+      <div class="col-md-4 mb-4">
+        <div class="card gallery-card">
+          <img src="taj mahal 4.jpg" class="card-img-top" alt="Taj Mahal">
+          <div class="card-body">
+            <h5 class="card-title">Taj Mahal</h5>
+            <p class="card-text">An eternal symbol of love and Mughal architecture in Agra, India.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card gallery-card">
+          <img src="Episode-12-The-Great-Wall-of-China.jpg" class="card-img-top" alt="Great Wall">
+          <div class="card-body">
+            <h5 class="card-title">Great Wall of China</h5>
+            <p class="card-text">One of the most iconic wonders, stretching across China's mountains.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card gallery-card">
+          <img src="20302-Colosseum.webp" class="card-img-top" alt="Colosseum">
+          <div class="card-body">
+            <h5 class="card-title">Colosseum</h5>
+            <p class="card-text">An ancient Roman arena with a rich and powerful history in Rome.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <div class="container"> -->
+     <section>
+     <div class="container">
+
+    <h1 class="intro-heading"><u>INTRODUCTION</u></h1>
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <p class="intro-paragraph">
+          The 7 Wonders of the World are amazing buildings and places made by people a long time ago. These wonders are famous because they show the great skills,
+          hard work, and creativity of humans from different parts of the world...
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="introduction wonder.jpg" alt="Introduction Wonder" class="img-fluid intro-img">
+      </div>
+    </div>
+
+    <!-- 1. Great Wall -->
+    <div class="wonder-row">
+      <img src="gallery great wall of china.jpg" alt="Great Wall of China">
+      <div class="wonder-text">
+        <h3><u>Great Wall of China</u></h3>
+        <p>The Great Wall of China is a massive fortification built to protect China from northern invaders and is one of the world’s most iconic landmarks.</p>
+      </div>
+    </div>
+
+    <!-- 2. Petra -->
+    <div class="wonder-row flex-md-row-reverse">
+      <img src="gallery petra.jpg" alt="Petra, Jordan">
+      <div class="wonder-text">
+        <h3><u>Petra, Jordan</u></h3>
+        <p>Petra is a city carved into red sandstone cliffs, once a major trading hub. It’s known for its stunning rock-cut architecture.</p>
+      </div>
+    </div>
+
+    <!-- 3. Christ the Redeemer -->
+    <div class="wonder-row">
+      <img src="gallery chirist the reedemer.jpg" alt="Christ the Redeemer">
+      <div class="wonder-text">
+        <h3><u>Christ the Redeemer</u></h3>
+        <p>This 98-foot tall statue overlooks Rio de Janeiro and symbolizes peace, making it a global icon of Brazil.</p>
+      </div>
+    </div>
+
+    <!-- 4. Machu Picchu -->
+    <div class="wonder-row flex-md-row-reverse">
+      <img src="gallery machu pichu.jpg" alt="Machu Picchu">
+      <div class="wonder-text">
+        <h3><u>Machu Picchu</u></h3>
+        <p>Built by the Incas in the 15th century, Machu Picchu is located high in the Andes and remains a symbol of ancient genius.</p>
+      </div>
+    </div>
+
+    <!-- 5. Chichen Itza -->
+    <div class="wonder-row">
+      <img src="gallery chichan.jpg" alt="Chichen Itza">
+      <div class="wonder-text">
+        <h3><u>Chichen Itza</u></h3>
+        <p>This Mayan pyramid complex in Mexico shows architectural brilliance and astronomical precision.</p>
+      </div>
+    </div>
+
+    <!-- 6. Colosseum -->
+    <div class="wonder-row flex-md-row-reverse">
+      <img src="gallery colosseum.jpg" alt="Roman Colosseum">
+      <div class="wonder-text">
+        <h3><u>Roman Colosseum</u></h3>
+        <p>The Colosseum in Rome was used for gladiator battles and remains one of the greatest symbols of ancient Rome.</p>
+      </div>
+    </div>
+
+    <!-- 7. Taj Mahal -->
+    <div class="wonder-row">
+      <img src="gallery taj mahal.jpg" alt="Taj Mahal">
+      <div class="wonder-text">
+        <h3><u>Taj Mahal</u></h3>
+        <p>Built by Shah Jahan in memory of his wife Mumtaz Mahal, the Taj Mahal stands as a symbol of eternal love and beauty.</p>
+      </div>
+    </div>
+
+  </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+  <!-- place footer here -->
+  <div class="footer-background-glow"></div>
+  <div class="footer-cols scroll-animate">
+
+    <!-- Column 1: About Us -->
+    <div class="footer-col animate-on-scroll">
+      <h3><img src="wonderworld_logo_transparent.png" alt="Wonder Logo" class="footer-logo">About Us</h3>
+      <p>We showcase the beauty and history of the world's greatest wonders in one place.</p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-col animate-on-scroll">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">History</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#">Site Map</a></li>
+        <li><a href="#">Queries</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Travel Ads -->
+    <div class="footer-col animate-on-scroll">
+      <h3>Travel Ads</h3>
+      <p>Find buses and flights to your favorite destinations:</p>
+      <ul>
+        <li><a href="bus-tickets.html" target="travel-link">🚌 Book Bus Tickets</a></li>
+        <li><a href="flight-tickets.html" target="travel-link">✈️ Search Flights</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Follow Us -->
+    <div class="footer-col animate-on-scroll">
+      <h3>Follow Us</h3>
+      <p>Stay connected:</p>
+      <div class="social-icons">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-pinterest"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer-copy">© 2025 Wonders of the World. All rights reserved.</p>
+</footer>
+<script>
+  const scrollElements = document.querySelectorAll('.animate-on-scroll');
+
+  const elementInView = (el, offset = 100) => {
+    const elementTop = el.getBoundingClientRect().top;
+    return (
+      elementTop <=
+      (window.innerHeight || document.documentElement.clientHeight) - offset
+    );
+  };
+
+  const displayScrollElement = (element) => {
+    element.classList.add('visible');
+  };
+
+  const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+      if (elementInView(el)) {
+        displayScrollElement(el);
+      }
+    });
+  };
+
+  window.addEventListener('scroll', () => {
+    handleScrollAnimation();
+  });
+
+  document.addEventListener("DOMContentLoaded", handleScrollAnimation);
+</script>
+
+</div>
+</body>
+</html>
